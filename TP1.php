@@ -21,5 +21,7 @@
 		</form>
 		<p style="font-size:<?php echo $_POST["size"];?>px; color:<?php echo $_POST["color"];?> "> ce texte :"<?php echo $_POST["message"];?>" est écrit en <?php echo $_POST["size"];?>  </p>
 		
+		<br> <p> ex 4 </p>
+		
 	</body>
 </html>
