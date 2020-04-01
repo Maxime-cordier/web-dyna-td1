@@ -16,9 +16,12 @@
 	</form>
 	
 	<?php
-	$s=$_POST[message];
-	wordCount($s);
+	wordCount($_POST["message"]);
 	?>
+	
+	
+	si c n'est pas nul > compter le nbr de fois c dans la chaine
+	sinon compter le nbr de mots
 	
 	</body>
 </html>
