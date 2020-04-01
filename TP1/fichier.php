@@ -43,16 +43,18 @@
 	} ?>
 	
 	<?php
+		$s=$_POST['message'];
 		function wordCount($s) {
 			$nbmots=str_word_count($s);
-			echo 'Il y a '. $nbmots. ' mots dans la phrase';
+			echo 'RESULTAT : Il y a '. $nbmots. ' mots dans la phrase';
 		}
 	?>
 	
 	<?php
-		function charCount($s, $c=NULL) {
-			$nbcaractère=strlen($s);
-			echo 'il y a '.$nbcaractère.' caractères dans la phrase';
+		$c=$_POST['crtr'];
+		function charCount($s, $c) {
+			$nbcaractère=mb_substr_count($s, $c);
+			print_r ("RESULTAT : il y a ".$nbcaractère." fois le caractère ".'"'.$c.'"'." dans la phrase");
 		}
 	?>
 	
