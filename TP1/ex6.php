@@ -19,7 +19,7 @@
 	?>
 	
 	<?php
-	$titre = 'exercice2';
+	$titre = 'exercice 3';
 	$contenu ='il faut faire ca';
 	$niveau=1;
 	element($titre,$contenu,$niveau);
@@ -27,7 +27,7 @@
 	<br>
 	<?php
 	$element=[];
-	parseElements($element);
+	parseElements($titre,$contenu,$niveau);
 	?>
 	
 	

@@ -27,19 +27,19 @@
 		function element($titre,$contenu,$niveau)
 	{?>
 	<h<?php echo $niveau?>> <?php echo $titre ?> </h<?php echo $niveau?>>
-		
+	<div> <?php echo $contenu?> </div>
 	<?php } ?>
 	
 	
 	
 	<?php
-		function parseElements($element)
+		function parseElements($titre,$contenu,$niveau)
 	{
 	$elements=[
 		['titre'=>'Exercices',
 	'contenu'=>'liste des exercices disponibles'],	
-		['titre'=> 'exercice 1' ,
-	'contenu'=> 'fsv'],
+		['titre'=> $titre ,
+	'contenu'=> $contenu ],
 		['titre'=>'exercice 2',
 	'contenu'=>'Afficher le contenu d\'un tableau']
 	];
