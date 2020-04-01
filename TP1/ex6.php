@@ -5,6 +5,7 @@
 		<title>Ex 6</title>
 	</head>
 	<body>
+	
 	<?php
 		$tableau=["SMITH","DOE","DOYLE"];
 		echo $tableau[0];//Affiche SMITH
@@ -14,8 +15,20 @@
 	?>
 	
 	<?php
-	element($titre,$contenu,$niveau=1);
+	include("fichier.php");
 	?>
+	
+	<?php
+	$titre = 'exercice1';
+	$contenu ='il faut faire ca';
+	$niveau=1;
+	element($titre,$contenu,$niveau);
+	?>
+	<br>
+	<?php
+	parseElements(element($titre,$contenu,$niveau));
+	?>
+	
 	
 	</body>
 </html>

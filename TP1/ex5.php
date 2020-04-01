@@ -12,11 +12,11 @@
 	<h1> Créer un tableau :</h1>
 	
 	<form method="POST" >
-			<label for="l">Lignes : </label>
-			<input type="number" value="" name="l">
-			<label for="c">Colonnes : </label>
-			<input type="number" value="" name="c">
-			<input type="submit" value="Création du tableau">
+		<label for="l">Lignes : </label>
+		<input type="number" value="" name="l">
+		<label for="c">Colonnes : </label>
+		<input type="number" value="" name="c">
+		<input type="submit" value="Création du tableau">
 	</form>
 	<br>
 	  
