@@ -33,7 +33,7 @@
 	
 	
 	<?php
-		function parseElements($titre,$contenu,$niveau)
+		function parseElements($element)
 	{
 	$elements=[
 		['titre'=>'Exercices',
