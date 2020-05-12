@@ -42,24 +42,44 @@
 	];
 	} ?>
 	
-	<?php
-		$s=$_POST['message'];
+	
+	
+		<?php
 		function wordCount($s) {
-			$nbmots=str_word_count($s);
-			echo 'RESULTAT : Il y a '. $nbmots. ' mots dans la phrase';
+			echo 'RESULTAT : Il y a '. str_word_count($s). ' mots dans la phrase';
 		}
-	?>
-	
-	<?php
-		$c=$_POST['crtr'];
+
 		function charCount($s, $c) {
-			$nbcaractère=mb_substr_count($s, $c);
-			print_r ("RESULTAT : il y a ".$nbcaractère." fois le caractère ".'"'.$c.'"'." dans la phrase");
+			echo 'RESULTAT : il y a '.mb_substr_count($s, $c)." fois le caractère ".'"'.$c.'"'." dans la phrase";
 		}
-	?>
+
+		function longeur($chaine) {
+			echo 'RESULTAT : Il y a '. strlen($chaine). ' caractères dans la phrase';
+		}
 	
+		function minuscule($chaine) {
+			echo "RESULTAT : </br>".strtolower($chaine);
+		}
+		
+		function majuscule($chaine) {
+			echo "RESULTAT : </br>".strtoupper($chaine);
+		}
+		
+		function premier($chaine) {
+			echo "RESULTAT : </br>".ucwords($chaine);
+		}
+		function couleur($chaine, $couleur) {
+			echo "RESULTAT : </br> <p style=\"color:$couleur\"> $chaine </p>";
+		}
 	
+		?>
 	
 	
 	</body>
-</html>
+</html>	
+
+
+
+
+
+

@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ex 4</title>
-	</head>
-	<body>
+<?php
+include "header.php";
+?>
 	
 	<table border='1'>
     <tbody>
@@ -40,6 +36,6 @@
 		<?php }?>
 	<?php}?>
 
-
-	</body>
-</html>
+<?php
+include "footer.php";
+?>

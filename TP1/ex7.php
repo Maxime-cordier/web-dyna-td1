@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ex 7</title>
-	</head>
-	<body>
-	<?php
+<?php
+	include("header.php");
+?>
+<?php
 	include("fichier.php");
-	?>
+?>
 	
 	<form method="POST" >
 		<label for="txt">Frapper votre texte : </label> <br>
@@ -28,12 +24,13 @@
 	
 	<?php 
 	$e=$_POST['ex1'];
-	if ($e==1) {
+	if($e==1){
 		wordCount($_POST['message']);
-	} else {
+	} else{
 		charCount($_POST['message'], $_POST['crtr']);
 	}
 	?>
 	
-	</body>
-</html>
+<?php
+	include("footer.php");
+?>

@@ -1,3 +1,9 @@
-<!--View associated to index action of Organizations controller -->
-<h1>salut</h1>
-index action
+{% extends "C:\xampp\htdocs\web-dyna-td1\tp3\app\views\base.html" %}
+{% block body %}
+    <h1>Organisations</h1>
+    <ul>
+        {% for orga in orgas %}
+            <li>{{orga}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

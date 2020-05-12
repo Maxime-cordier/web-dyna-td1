@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ex 6</title>
-	</head>
-	<body>
+<?php
+include "header.php";
+?>
 	
-	<?php
-	include("fichier.php");
-	?>
+<?php
+include("fichier.php");
+?>
 	
-	<?php
-	$titre =' ';
-	$contenu =' ';
-	$niveau=1;
-	parseElements($titre,$contenu,$niveau);
-	?>
+<?php
+$titre =' ';
+$contenu =' ';
+$niveau=1;
+parseElements($titre,$contenu,$niveau);
+?>
 	
-	
-	</body>
-</html>
+<?php
+include "footer.php";

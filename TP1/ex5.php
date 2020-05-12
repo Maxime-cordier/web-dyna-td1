@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Ex 5</title>
-	</head>
-	<body>
-	<?php
-	include("fichier.php");
-	?>
+<?php
+include "header.php";
+?>
+
+<?php
+include("fichier.php");
+?>
 	
 	<h1> Créer un tableau :</h1>
 	
@@ -26,7 +23,6 @@
 		createHtmlTables($nbLignes,$nbColonnes);
 	?>
 	
-	
-	
-	</body>
-</html>
+<?php
+include "footer.php";
+?>

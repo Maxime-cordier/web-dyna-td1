@@ -1,18 +1,26 @@
 <?php
 namespace controllers;
- /**
- * Controller Organizations
- **/
-class Organizations extends ControllerBase{
+use Ubiquity\orm\DAO;
+use models\Organization;
 
-	public function index(){
-		$this->loadView("Organizations/index.html");
-	}
+/**
+ * Controller Organizations
+ * @route("organizations")
+ **/
+class Organizations extends \Ubiquity\controllers\ControllerBase{
+    
+    /**
+     * @get("name"=>"orgas-index")
+     **/
+    public function index(){
+        $organizations=DAO::getAll(Organization::class);
+        $this->loadView("Organizations/index.html",["orgas"=>$organizations]);
+    }
 
 	/**
 	 *@route("Organizations","methods"=>["get"])
 	**/
-	public function tp3(){
+	public function Organizations(){
 		
 	}
 
