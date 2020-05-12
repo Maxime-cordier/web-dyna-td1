@@ -2,11 +2,14 @@
 	include "C:\xampp\htdocs\web-dyna-td1\tp4\app\views\main\vHeader.html";
 	include "C:\xampp\htdocs\web-dyna-td1\tp4\app\views\main\vMenu.html";
 ?>
+<?php
+	session_start();
+?>
+<h1>DONE !</h1>
+<p>Vous êtes inscrit!</p>
+<a href="inscriptions.html"><input type="submit" value="Consulter les inscriptions"></a>
+<a href="logout.html"><input type="submit" value="Se déconecter"></a>
 
-<h1> Bienvenue ! </h1>
-<br>
-<p> Cette application vous permet de vous incrire à notre prochain flashmob </p>
-<a href="inscriptions.html"><input type="submit" value="Inscription"></a>
 
 
 <?php

@@ -1,18 +1,26 @@
 <?php
 	include "C:\xampp\htdocs\web-dyna-td1\tp4\app\views\main\vHeader.html";
-?>
-
-<?php
 	include "C:\xampp\htdocs\web-dyna-td1\tp4\app\views\main\vMenu.html";
 ?>
 
 <label for="nom"> Nom ou pseudo</label> </br>
 <input type="string" value="Votre Nom" name="nom">
-
+</br></br>
 <label for="mail"> Adresse Mail</label> </br>
 <input type="string" value="Votre email" name="mail">
+<br> <br>
+<a href="Connecte.html"><input type="submit" value="Valider L'inscription"></a>
 
-<input type="submit" value="Valider L'inscription">
+<?php
+if ($_POST["nom"]='' && $_POST["mail"]='') {
+	UResponse::header("location" ,"/"); 
+}
+else {
+	insert(string $_POST["nom"]):string;
+	insert(string $_POST["mail"]):string;
+	UResponse::header("location" ,"/Connecte.html")
+}
+?>
 
 <?php
 	include "C:\xampp\htdocs\web-dyna-td1\tp4\app\views\main\vFooter.html";
